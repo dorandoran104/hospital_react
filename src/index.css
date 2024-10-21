@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  background-color: rebeccapurple;
+  width: 60vw;
+  height: 100px;
+  margin : auto;
+}
