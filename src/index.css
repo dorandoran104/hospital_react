@@ -7,14 +7,84 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul, li {
+  margin : 0;
+  padding: 0;
+  list-style-type : none;
+}
+
+a {
+  color : black;
+  text-decoration: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .container {
-  background-color: rebeccapurple;
+  background-color: #CC99CC;
   width: 60vw;
   height: 100px;
   margin : auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100vw;  /* 너비를 100%로 설정 */
+    margin: 0;     /* 가운데 정렬할 필요가 없으므로 margin 제거 */
+  }
+}
+
+.nav_row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: pink;
+}
+
+.nav_content{
+  margin-left: 10px;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height : 80vh;
+}
+
+.main_page {
+ 
+  height : 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.search_input {
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  width: 80%;
+  height: 30px;
+}
+
+.search_button {
+  height: 30px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }

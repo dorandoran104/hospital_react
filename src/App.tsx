@@ -1,17 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navigator from './components/Navigator';
+
+import MainPage from './pages/home/home'; 
+import SearchPage from './pages/search/search';
 
 function App() {
   return (
     <Router>
-      <nav>
-        nav
-      </nav>
-
+      <Navigator/>
       <Routes>
-        <Route></Route>
+        <Route path='/' element={<MainPage/>}/>
+        <Route path="/search/:name" element={<SearchPage/>}/>
       </Routes>
 
     </Router>
